@@ -1,0 +1,18 @@
+{
+    "name": "aaronharold/sms-service",
+    "description": "SMS Gateway Service For Different PH Provider",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "AaronHarold\\SmsService\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aaronharold",
+            "email": "harold.aaron@kmc.solutions"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
