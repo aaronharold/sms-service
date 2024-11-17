@@ -16,7 +16,7 @@ class SmsManager extends Manager
      */
     public function getDefaultDriver()
     {
-        return config('sms-service.default') ?? 'log';
+        return config('sms-service.default') ?? 'promotexter';
     }
 
     /**
@@ -24,7 +24,7 @@ class SmsManager extends Manager
      *
      * @return MessageInterface
      */
-    public function createM360(): MessageInterface
+    public function createM360Driver(): MessageInterface
     {
         return new M360(config('sms-service.drivers.m360'));
     }
@@ -34,7 +34,7 @@ class SmsManager extends Manager
      *
      * @return MessageInterface
      */
-    public function createPromotexter(): MessageInterface
+    public function createPromotexterDriver(): MessageInterface
     {
         return new Promotexter(config('sms-service.drivers.promotexter'));
     }
