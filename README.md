@@ -26,7 +26,7 @@ PROMOTEXTER_BASEURI=
         {
             "type": "package",
             "package": {
-                "name": "aaron-harold/sms-service",
+                "name": "aaronharold/sms-service",
                 "version": "dev-main",
                 "source": {
                     "url": "https://github.com/aaronharold/sms-service",
@@ -82,6 +82,12 @@ composer update
 
 
 ### Publish Vendor
+```
+'aliases' => [
+    'SMS' => \Aaronharold\SmsService\SMS::class,
+],
+```
+
 ```
 
 php artisan vendor:publish --provider=Aaronharold\SmsService\SmsServiceProvider
